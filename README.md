@@ -1,14 +1,12 @@
 # gtfsanta
-Tookit for [gtf](http://mblab.wustl.edu/GTF22.html) format conversion and sequence extraction. Still in development.
-
-##Description
+Command Line Tookit for [gtf](http://mblab.wustl.edu/GTF22.html) format conversion and sequence extraction. Still in **development**.
 
 A set of functions for gtf file manipulation. It's written in [Julia](https://julialang.org/) and has no dependencies except for Julia itself.
 Julia a fast dynamic programming language which offers speeds on par with C and Fortran. See [here](https://julialang.org/downloads/) for Julia installation.
 
 This tool requires [indexed fasta file](http://www.htslib.org/doc/faidx.html) for memory efficient sequence extraction.
 
-##Usage
+## Usage
 
 ```bash
 #Extracting fasta sequence from gtf file
@@ -35,7 +33,7 @@ AAATCCTAAGAGGGAAGGAAGTAGAATCCACAGGGTGGCAGTTACCTAAGGATCAGAAGA
 ...
 ```
 
-##To do
+## To do
 
 - [x] gtf2fasta
 - [x] bed2fasta
