@@ -2,22 +2,18 @@
 Tookit for [gtf](http://mblab.wustl.edu/GTF22.html) format conversion and sequence extraction. Still in development.
 
 ##Description
+
 A set of functions for gtf file manipulation. It's written in [Julia](https://julialang.org/) and has no dependencies except for Julia itself.
 Julia a fast dynamic programming language which offers speeds on par with C and Fortran. See [here](https://julialang.org/downloads/) for Julia installation.
 
 This tool requires [indexed fasta file](http://www.htslib.org/doc/faidx.html) for memory efficient sequence extraction.
 
 ##Usage
-```
-#Basic usage
-$gtfsanta.jl
-Tookit for gtf format conversion and sequence extraction
 
-gtfsanta gtf2fasta <input.gtf> <input.fa> : extract sequence from gtf file
-gtfsanta bed2fasta <input.bed> <input.fa> : extract sequence from bed file
-
+```bash
 #Extracting fasta sequence from gtf file
-$gtfsanta.jl gtf2fasta ens82.gtf hg19.fa | head
+
+$ gtfsanta.jl gtf2fasta ens82.gtf hg19.fa | head
 >ENST00000456328
 GTTAACTTGCCGTCAGCCTTTTCTTTGACCTCTTCTTTCTGTTCATGTGTATTTGCTGTCTCTTAGCCCA
 GACTTCCCGTGTCCTTTCCACCGGGCCTTTGAGAGGTCACAGGGTCTTGATGCTGTGGTCTTCATCTGCA
@@ -25,7 +21,8 @@ GGTGTCTGACTTCCAGCAACTGCTGGCCTGTGCCAGGGTGCAAGCTGAGCACTGGAGTGGAGTTTTCCTG
 ...
 
 #Extracting fasta sequence from bed file
-$gtfsanta.jl bed2fasta CEBPe_peaks.narrowPeak mm10.fa | head
+
+$ gtfsanta.jl bed2fasta CEBPe_peaks.bed mm10.fa | head
 >chr1:4769907-4770192
 AGTGTCTGAACCTCTGAGGCAACTGCCTTTCTAATTTCAATGTGTCTAGCATTGTGCCTG
 TGTGTGTGCCCTTGAGAACTGTCGATTGTAGAAACTCATGAATACTTAATATTATTAATC
